@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const  validator = require('validator');
 
 
-const userSchema = new mongoose.Schema({
+const adminSchema = new mongoose.Schema({
     firstName:{
         type: String,
         required: true
@@ -37,5 +37,7 @@ const userSchema = new mongoose.Schema({
     timestamps: true})
 
 
- const userModel =  mongoose.model("User", userSchema);
+ const adminModel =  mongoose.model("Admin  ", adminSchema);
+
+ 
 module.exports = userModel
